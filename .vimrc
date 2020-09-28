@@ -6,6 +6,9 @@
 " 建议配置完成后将这个关闭，否则配置多了之后会很卡
 " autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
+" 設定編碼
+set encoding=utf8
+
 " 关闭兼容模式
 set nocompatible
 
