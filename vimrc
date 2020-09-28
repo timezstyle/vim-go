@@ -93,7 +93,7 @@ Plug 'honza/vim-snippets'
 Plug 'fatih/molokai'
 
 " go 主要插件
-Plug 'fatih/vim-go', { 'tag': '*' }
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 " go 中的代码追踪，输入 gd 就可以自动跳转
 Plug 'dgryski/vim-godef'
 
