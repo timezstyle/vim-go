@@ -258,7 +258,7 @@ if has('gui_running')
     set lines=999 columns=999 linespace=4
 
     " 设置字体及大小
-        set guifont=Roboto\ Mono\ 13
+    set guifont=Roboto\ Mono\ 13
 
     set guioptions-=m " 隐藏菜单栏
     set guioptions-=T " 隐藏工具栏
