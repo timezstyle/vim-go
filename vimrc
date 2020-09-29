@@ -6,6 +6,9 @@
 " 建议配置完成后将这个关闭，否则配置多了之后会很卡
 " autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
+" 讓 tmux 支援顏色
+set term=screen-256color
+
 " 設定編碼
 set encoding=utf8
 
