@@ -6,6 +6,9 @@
 " 建议配置完成后将这个关闭，否则配置多了之后会很卡
 " autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
+" 不要開啟swp模式
+set noswapfile
+
 " 讓 tmux 支援顏色
 set term=screen-256color
 
@@ -45,7 +48,7 @@ syntax on                    " 开启文件类型侦测
 filetype plugin indent on    " 启用自动补全
 
 " 退出插入模式指定类型的文件自动保存
-au InsertLeave *.go,*.sh,*.php write
+"au InsertLeave *.go,*.sh,*.php write
 
 "==============================================================================
 " 插件配置 
