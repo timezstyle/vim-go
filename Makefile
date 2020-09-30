@@ -5,13 +5,14 @@ install:
 	apt update -y
 
 	# 安裝golang
-	wget https://golang.org/dl/${GO_VERSION}
-	tar -C /usr/local -xzf ${GO_VERSION}
-	rm -rf ${GO_VERSION}
+	#wget https://golang.org/dl/${GO_VERSION}
+	#tar -C /usr/local -xzf ${GO_VERSION}
+	#rm -rf ${GO_VERSION}
+	snap install go --classic
 	echo 'export GOPATH=$$HOME/go' >> ~/.profile
-	echo 'export GOROOT=/usr/local/go' >> ~/.profile
+	echo 'export GOROOT=/snap/go/current' >> ~/.profile
 	echo 'export PATH=$$PATH:$$GOROOT/bin:$$GOPATH/bin' >> ~/.profile
-	
+
 	# copy vimrc
 	cp vimrc ~/.vimrc
 
